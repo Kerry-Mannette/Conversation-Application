@@ -1,6 +1,4 @@
-// Week 11:
-
-// Question 1:
+// Animal Constructors
 function Cat(name, breed, weight) {
     this.name = name;
     this.breed = breed;
@@ -20,7 +18,8 @@ function Dog(name, breed, weight) {
     };
 
 
-// Question 2:
+    
+
 // Array to store animals
 var animals = [];
 // Create Animal Function
@@ -46,7 +45,9 @@ function newAnimal() {
 
     document.getElementById("animalDisplay").innerHTML += `<br>${type}: ${name}, Breed: ${breed}, Weight: ${weight}`;
 }
-// Question 3:
+
+
+
 // Speak Function
 function makeSpeak() {
     var speakName = document.getElementById("speakName").value;
