@@ -76,3 +76,10 @@ button:hover{filter:brightness(.95)}
   }
   .section{flex:1}
 }
+
+/* Footer */
+footer{
+  margin-top:2rem;
+  font-size:0.9rem;
+  text-align:center;
+}
