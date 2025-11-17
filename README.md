@@ -1,3 +1,3 @@
 Developed using HTML, CSS, and JavaScript.
 
-<img width="1755" height="848" alt="image" src="https://github.com/user-attachments/assets/b2ca3ca2-39ed-49a6-8931-6065ad0a5a54" />
+<img width="1755" height="848" alt="image" src="https://github.com/user-attachments/assets/c0366641-41c7-40d9-b4d8-fafef2ade3b9" />
