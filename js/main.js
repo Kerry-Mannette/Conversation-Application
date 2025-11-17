@@ -21,13 +21,13 @@ function Dog(name, breed, weight) {
     
 
 // Array to store animals
-var animals = [];
+let animals = [];
 // Create Animal Function
 function newAnimal() {
-    var name = document.getElementById("name").value;
-    var breed = document.getElementById("breed").value;
-    var weight = parseInt(document.getElementById("weight").value);
-    var type = document.getElementById("type").value;
+    let name = document.getElementById("name").value;
+    let breed = document.getElementById("breed").value;
+    let weight = parseInt(document.getElementById("weight").value);
+    let type = document.getElementById("type").value;
 
     if (!name || !breed || isNaN(weight)) {
         alert("Please fill in all fields.");
@@ -50,8 +50,8 @@ function newAnimal() {
 
 // Speak Function
 function makeSpeak() {
-    var speakName = document.getElementById("speakName").value;
-    var found = animals.find(a => a.name.toLowerCase() === speakName.toLowerCase());
+    let speakName = document.getElementById("speakName").value;
+    let found = animals.find(a => a.name.toLowerCase() === speakName.toLowerCase());
     
     if (found) {
         document.getElementById("speakDisplay").innerHTML += `<br>${found.speak()}`;
@@ -62,8 +62,8 @@ function makeSpeak() {
 
 // Preview image for selected type
 function updateTypeImage() {
-    var type = document.getElementById("type").value;
-    var img = document.getElementById("typeImage");
+    let type = document.getElementById("type").value;
+    let img = document.getElementById("typeImage");
     if (!img) return;
     img.referrerPolicy = 'no-referrer';
     if (type === "Dog") {
@@ -77,7 +77,7 @@ function updateTypeImage() {
 
 // Initialize preview on load and on change
 document.addEventListener("DOMContentLoaded", function(){
-    var sel = document.getElementById("type");
+    let sel = document.getElementById("type");
     if (sel) {
         sel.addEventListener("change", updateTypeImage);
         updateTypeImage();
