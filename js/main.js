@@ -34,7 +34,7 @@ function newAnimal() {
         return;
     }
 
-    var newAnimal;
+    let newAnimal;
     if (type === "Dog") {
         newAnimal = new Dog(name, breed, weight);
     } else {
@@ -67,7 +67,7 @@ function updateTypeImage() {
     if (!img) return;
     img.referrerPolicy = 'no-referrer';
     if (type === "Dog") {
-        img.src = "https://place.dog/240/160?r=" + Math.floor(Math.random()*1000);
+        img.src = "https://place.dog/240/160?r=" + Math.floor(Math.random()*10000);
         img.alt = "Dog preview";
     } else {
         img.src = "https://cataas.com/cat?width=240&height=160&rand=" + Math.floor(Math.random()*10000);
